@@ -3,6 +3,7 @@ let itera = "";
 let fs = require('fs') ;
 
 for(let ifor=1;ifor<11;ifor++){
+    //console.log(`${MULTIPLICADOR} x ${ifor} = ${MULTIPLICADOR*ifor}`);    
     itera+= `${MULTIPLICADOR} x ${ifor} = ${MULTIPLICADOR*ifor}\n`;
 }
 fs.writeFile(`tabla-${MULTIPLICADOR}.txt`,itera,function(err){
